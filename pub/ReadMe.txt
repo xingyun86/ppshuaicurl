@@ -1,10 +1,23 @@
-使用CURL库时，需要引入：
+宸ョ▼缂栬瘧浣跨敤鏃惰瀹氫箟KERNELHELPER_BUILDING
+浼氳嚜鍔ㄦ坊鍔犱互涓嬭繖浜涘簱
+#if !defined(KERNELHELPER_BUILDING)
 
-normaliz.lib
+#pragma comment (lib, "GDI32.LIB")
+#pragma comment (lib, "USER32.LIB")
+#pragma comment (lib, "ADVAPI32.LIB")
+#pragma comment (lib, "WS2_32.lib")
+#pragma comment (lib, "MSWSOCK.lib")
+#pragma comment (lib, "wldap32.lib")
+#pragma comment (lib, "crypt32.lib")
+#pragma comment (lib, "normaliz.lib")
+#pragma comment (lib, "libeay32.lib")
+#pragma comment (lib, "ssleay32.lib")
+#pragma comment (lib, "zlibstatic.lib")
+#pragma comment (lib, "winsqlite.lib")
+#pragma comment (lib, "libssh2.lib")
+#pragma comment (lib, "libcares.lib")
+#pragma comment (lib, "libcurl.lib")
+#pragma comment (lib, "lib_json.lib")
+#pragma comment (lib, "kernelhelper.lib")
 
-libcares.lib
-libssh2.lib
-zlibstatic.lib
-libeay32.lib
-ssleay32.lib
-libcurl.lib
+#endif
